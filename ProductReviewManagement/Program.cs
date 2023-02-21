@@ -26,6 +26,10 @@
             {
                 Console.WriteLine("ProductID : " + product.ProductID + " UserID : " + product.UserID + " Rating : " + product.Rating + " Review : " + product.Review + " IsLike : " + product.IsLike);
             }
+            Console.WriteLine();
+
+            Management management = new Management();
+            management.TopRecords(productReviewList);
         }
     }
 }
