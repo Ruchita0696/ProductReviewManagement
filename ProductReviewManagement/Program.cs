@@ -33,6 +33,8 @@
             management.SelectedRecords(productReviewList);
             management.CountOfReviewPresenForEachProductID(productReviewList);
             management.RetriveOnlyProductIdAndReviewFromAllRecords(productReviewList);
+            management.SkipTopFiveRecords(productReviewList);
+
         }
     }
 }
