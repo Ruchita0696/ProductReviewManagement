@@ -82,5 +82,24 @@ namespace ProductReviewManagement
             }
             Console.WriteLine();
         }
+
+        public void CreateProductReviewTable(List<ProductReview> review)
+        {
+            dataTable.Columns.Add("ProductID", typeof(Int32));
+            dataTable.Columns.Add("UserID", typeof (Int32));
+            dataTable.Columns.Add("Rating", typeof(double));
+            dataTable.Columns.Add("Review", typeof(string));
+            dataTable.Columns.Add("IsLike", typeof(bool));
+            Console.WriteLine("**** Data Table Product Review ****");
+            foreach (ProductReview product in review)
+            {
+                dataTable.Rows.Add(product.ProductID, product.UserID, product.Rating, product.Review, product.IsLike);
+            }
+            foreach (DataRow dataRow in dataTable.Rows)
+            {
+                Console.WriteLine("ProductID :" + dataRow[0] + "UserID :" + dataRow[1] + " Rating :" + dataRow[2] + "Review :" + dataRow[3] + "IsLike :" + dataRow[4]);
+            }
+        
+        }
     }
 }
