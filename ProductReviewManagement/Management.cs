@@ -54,7 +54,7 @@ namespace ProductReviewManagement
 
         }
         /// <summary>
-        /// Retrives the only productID and review from all records.
+        /// Retrives the only productID and review from all records UC-5 and UC-7.
         /// </summary>
         /// <param name="review">The review.</param>
         public void RetriveOnlyProductIdAndReviewFromAllRecords(List<ProductReview> review)
